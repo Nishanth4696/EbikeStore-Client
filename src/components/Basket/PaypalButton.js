@@ -28,7 +28,7 @@ export default class PaypalButton extends React.Component {
         // Document on Paypal's currency code: https://developer.paypal.com/docs/classic/api/currency_codes/
  
         const client = {
-            sandbox: 'AXS9isLfzD6WPZGUmhPwCVf2tqVK8tXIbvKcdOIUkjPRVjwrbB0CVIvD3ATtj-SIKZ7G03yuaa2Q7sDo',
+            sandbox: 'AcHF_NV0Kb6edOEnPhoaBGmCDTWySD63WR1UrM6MpSEabq_rUFH3sZZTi_cgVUc31uD6bC-_DnPBz6WE',
             production: 'YOUR-PRODUCTION-APP-ID',
         }
         // In order to get production's app-ID, you will have to send your app to Paypal for approval first
