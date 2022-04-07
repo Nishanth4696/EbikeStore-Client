@@ -1,0 +1,61 @@
+.background {
+    background-image: url('../img/title1.jpg');
+    filter: brightness(50%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 40vh;
+    width: 100vw;
+    color: rgb(128, 255, 155) !important;
+}
+
+.title {
+    position: absolute;
+    top: 5%;
+    z-index: 1;
+    color: rgb(83, 182, 97);
+    left: 3%;
+    font-size: 4em;
+}
+
+.subTitle {
+    position: absolute;
+    top: 18%;
+    left: 3%;
+    z-index: 1;
+    color: rgb(233, 231, 231);
+    font-size: 1.8em;
+
+}
+
+@media screen and (max-width:597px) {
+    .title {
+        top: 3%;
+    }
+
+    .subTitle {
+        top: 25%;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .title {
+        font-size: 3.5em;
+    }
+
+    .subTitle {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width:294px) {
+    .title {
+        font-size: 3em;
+        top: 0%;
+    }
+
+    .subTitle {
+        font-size: 1.5em;
+        top: 21%;
+    }
+}

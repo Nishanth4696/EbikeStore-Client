@@ -1,0 +1,33 @@
+.imgContainer {
+position: relative;
+
+}
+
+.img-thumbnail {
+    height: 400px;
+    width: 570px;
+    
+    transition: all 0.3s ease-in-out;
+}
+
+.imgContainer:hover .img-thumbnail {
+    filter: brightness(35%);
+}
+
+
+.imgTextPosition {
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+font-size: 5em;
+color: white;
+opacity: 0;
+transition: all 0.3s ease-in-out;
+}
+
+.imgContainer:hover .imgTextPosition {
+    color: white;
+    opacity: 1;
+}

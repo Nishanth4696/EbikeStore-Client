@@ -1,0 +1,28 @@
+  :root {
+      --mainWhite: rgb(230, 230, 230);
+      --lightBlue: rgb(136, 182, 243);
+      --navGreen: rgb(67, 129, 65);
+      --submitGreen: rgb(56, 158, 61);
+      --borderGreen: rgb(75, 192, 81);
+      --hoverYellow: rgb(228, 209, 37);
+  }
+  
+  body {
+      overflow-x: hidden;
+      background: var(--mainWhite) !important;
+      color: rgb(75, 75, 75) !important;
+  }
+
+  .btn {
+      background: transparent;
+      font-size: 1.4rem !important;
+      box-shadow: 0.5px 0.5px 0.5px 0.5px;
+      color: rgb(46, 46, 46);
+      border: 0.1rem solid !important;
+      border-radius: 0 !important;
+  }
+
+  .btn:hover {
+      background:  rgb(46, 46, 46) !important;
+      color: white !important;
+  }
