@@ -1,139 +1,73 @@
-  :root {
-      --mainWhite: rgb(230, 230, 230);
-      --lightBlue: rgb(136, 182, 243);
-      --navGreen: rgb(67, 129, 65);
-      --submitGreen: rgb(56, 158, 61);
-      --borderGreen: rgb(75, 192, 81);
-      --hoverYellow: rgb(228, 209, 37);
-  }
-  
-  body {
-      overflow-x: hidden;
-      background: var(--mainWhite) !important;
-      color: rgb(75, 75, 75) !important;
-  }
+/* @import url("https://fonts.googleapis.com/css2?family=Aladin&family=Dancing+Script:wght@500&family=Great+Vibes&family=Roboto+Condensed:ital@1&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap'); 
+ @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
-  .btn {
-      background: transparent;
-      font-size: 1.4rem !important;
-      box-shadow: 0.5px 0.5px 0.5px 0.5px;
-      color: rgb(46, 46, 46);
-      border: 0.1rem solid !important;
-      border-radius: 0 !important;
-  }
+.App {
+  text-align: center;
+}
 
-  .btn:hover {
-      background:  rgb(46, 46, 46) !important;
-      color: white !important;
-  }
-
-  .login_container {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .login_form_container {
-    width: 900px;
-    height: 500px;
-    display: flex;
-    border-radius: 10px;
-    box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
-      0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
-  }
-  
-  .login_left {
-    flex: 2;
+.brand{
+  margin:-283px !important;
+  margin-top: -800px !important;
+  margin-right: 300px !important;
+}
+.loginpage,
+.registerpage,
+.forgotpage,
+.resetpage {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: url("./assets/rayvolt-xone-ebike-electric-bicycle.jpg");
+  background-size: cover;
+}
+.formcontainer {
+  display: flex;
+  max-width: 350px;
+  flex-direction: column;
+  padding: 15px;
+  background: #fff;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.bodycontent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: 17px;
+}
+.bodycontent1 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+.carimage {
+  max-width: 450px;
+  width: 100%;
+  height: auto;
+}
+.carinfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.centcont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 625px) {
+  .loginpage,
+  .registerpage,
+  .forgotpage,
+  .resetpage {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(155, 231, 245);
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
   }
-  
-  .form_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-  }
-  
-  .form_container h1 {
-    color: black;
-    font-size: 40px;
-    margin-top: 0;
-  }
-  
-  
-  .input {
-    outline: none;
-    border: none;
-    font-weight: bold !important;
-    color: black !important;
-    width: 370px;
-    padding: 15px;
-    gap: 20px;
-    border-radius: 10px;
-    background-color: #8b8df8;
-    margin: 10px !important;
-    font-size: 14px;
-    height:min-content;
-  }
-  
-  .error_msg {
-    width: 370px;
-    padding: 15px;
-    margin: 5px 0;
-    font-size: 14px;
-    background-color: #f34646;
-    color: white;
-    border-radius: 5px;
-    text-align: center;
-  }
-  
-  .login_right {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #3bb19b;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-  }
-  
-  .login_right h1 {
-   
-    
-    color: white;
-    font-size: 40px;
-    align-self: center;
-  }
-  
-  .white_btn,
-  .green_btn {
-    border: none;
-    outline: none;
-    padding: 12px 0;
-    background-color: rgb(245, 243, 243);
-    border-radius: 20px;
-    width: 180px;
-    font-weight: bold;
-    font-size: 14px;
-    cursor: pointer;
-  }
-  
-  .green_btn {
-    background-color: #2acfb1;
-    color: white;
-    margin: 10px;
-  }
-  
-
-  .login-form{
-    width: 100vw;
-  }
+}

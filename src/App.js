@@ -1,44 +1,44 @@
-import React from 'react';
-import {Switch,Route} from 'react-router-dom';
-import './App.css';
-import Title from './components/Title';
-import Navbar from './components/Navbar';
-import ProductList from './components/ProductList';
-import ProductListBikes from './components/ProductListBikes';
-import ProductListAccessories from './components/ProductListAccessories';
-import Cart from './components/Basket/Cart';
-import Details from './components/Details';
-import PageNotFound from './components/PageNotFound';
-import Model from './components/Model';
-import Copyright from './components/Copyright';
-import Services from './components/Services';
-import ServiceForm from './components/ServiceForm';
-import ServiceFormComplete from './components/ServiceFormComplete';
-import Contact from './components/Contact';
+import "./App.css";
+import { Route, Switch, Redirect } from "react-router-dom";
+import Home from "./pages/Home.js";
+import Login from "./pages/Login.js";
+import Register from "./pages/Register.js";
+import BookingCar from "./pages/BookingCar.js";
+import Forgotpassword from "./pages/Forgotpassword.js";
+import Resetpassword from "./pages/Resetpassword.js";
+import Navbar from "./components/Navbar.js";
+import Paper from "@mui/material/Paper";
+import UserBookings from "./pages/UserBookings";
 
-
-export default class App extends React.Component {
-  render() {
-    return (
-      <React.Fragment>
-        <Title/>
-        <Navbar/>
-        <Switch>
-          <Route exact path='/' component={ProductList} />
-          
-          <Route path='/details' component={Details} />
-          <Route path='/bikes' component={ProductListBikes} />
-          <Route path='/accessories' component={ProductListAccessories} />
-          <Route path='/services' component={Services} />
-          <Route path='/contact' component={Contact} />
-          <Route path='/cart' component={Cart} />
-          <Route component={PageNotFound} />
-        </Switch>
-          <Copyright/>
-          <Model/>
-          <ServiceForm/>
-          <ServiceFormComplete />
-      </React.Fragment>
-    )
-  }
+function App() {
+  return (
+    <div className="App">
+      <Switch>
+        <Route exact path="/">
+          <Redirect to="/login" />
+        </Route>
+        <Route path="/login" exact component={Login} />
+        <Route path="/register" exact component={Register} />
+        <Route path="/forgotpassword" exact component={Forgotpassword} />
+        <Route
+          path="/resetpassword/:userId/:token"
+          exact
+          component={Resetpassword}
+        />
+        <>
+          <Paper
+            elevation={0}
+            style={{ borderStyle: "none", minHeight: "100vh" }}
+          >
+            <Navbar />
+            <Route path="/home" exact component={Home} />
+            <Route path='/booking/:carid' exact component={BookingCar} />
+            <Route path="/userbookings" exact component={UserBookings} />
+          </Paper>
+        </>
+      </Switch>
+    </div>
+  );
 }
+
+export default App;
