@@ -36,9 +36,10 @@ function Home() {
             <Card
               key={car._id}
               sx={{
-                maxWidth: "350px",
+                maxWidth: "450px",
                 margin: "10px",
                 borderRadius: "10px",
+                boxShadow:''
               }}
             >
               <CardMedia

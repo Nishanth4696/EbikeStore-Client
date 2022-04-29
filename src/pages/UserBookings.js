@@ -29,12 +29,12 @@ function UserBookings() {
                   style={{ borderRadius: 5, overflow: "hidden" }}
                   className="imgbook"
                 >
-                  <img
+                  {/* <img
                     src={booking.car.image}
                     height="140"
                     width="100%"
                     alt={booking.car.name}
-                  />
+                  /> */}
                 </div>
                 <div style={{ display: "flex", flexDirection: "column" }}>
                   <Typography variant="p">
@@ -43,9 +43,9 @@ function UserBookings() {
                   <Typography variant="p">
                     Total hours : <b>{booking.totalHours}</b>
                   </Typography>
-                  <Typography variant="p">
+                  {/* <Typography variant="p">
                     Rent per hour : <b>{booking.car.rentPerHour}</b>
-                  </Typography>
+                  </Typography> */}
                   <Typography variant="p">
                     Total amount : <b>{booking.totalAmount}</b>
                   </Typography>

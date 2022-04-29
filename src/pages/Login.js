@@ -43,9 +43,8 @@ function Login() {
             color: "#fff",
           }}
           variant="h1"
-          marginLeft='50px'
         >
-          EBike Corner
+          Car Corner
         </Typography>
       </div>
       <div className="formcontainer">
