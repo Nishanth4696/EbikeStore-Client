@@ -45,7 +45,7 @@ function Login() {
           variant="h1"
           marginLeft='50px'
         >
-          EBike Store
+          EBike Corner
         </Typography>
       </div>
       <div className="formcontainer">
