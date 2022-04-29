@@ -43,7 +43,7 @@ function Home() {
             >
               <CardMedia
                 component="img"
-                height="140"
+                height="200"
                 image={car.image}
                 alt={car.name}
                 sx={{ borderRadius: "10px", overflow: "hidden" }}
