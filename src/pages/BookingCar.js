@@ -192,20 +192,7 @@ function BookCar({ car }) {
           <p>
             Rent Per Hour : <b>{car.rentPerHour}</b>
           </p>
-          <FormControlLabel
-            control={
-              <Checkbox
-                onChange={(e) => {
-                  if (e.target.checked) {
-                    setdriver(true);
-                  } else {
-                    setdriver(false);
-                  }
-                }}
-              />
-            }
-            label="Driver Required"
-          />
+          
 
           {/* <label></label> */}
 
