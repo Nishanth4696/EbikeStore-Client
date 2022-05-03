@@ -44,7 +44,7 @@ function Login() {
           }}
           variant="h1"
         >
-          Car Corner
+          Ebike Corner
         </Typography>
       </div>
       <div className="formcontainer">

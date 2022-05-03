@@ -33,7 +33,7 @@ function Navbar() {
             }}
             variant="h4"
           >
-            Car corner
+            Ebike Corner
           </Typography>
           <IconButton
             sx={{ marginLeft: "auto" }}

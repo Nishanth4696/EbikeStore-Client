@@ -37,9 +37,9 @@ function UserBookings() {
                   /> */}
                 </div>
                 <div style={{ display: "flex", flexDirection: "column" }}>
-                  <Typography variant="p">
+                  {/* <Typography variant="p">
                     <b>{booking.car.name}</b>
-                  </Typography>
+                  </Typography> */}
                   <Typography variant="p">
                     Total hours : <b>{booking.totalHours}</b>
                   </Typography>

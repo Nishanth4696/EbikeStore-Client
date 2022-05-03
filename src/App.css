@@ -14,8 +14,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  background-image: url("./assets/car-background.jpg");
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGjb4KWvUU7TZLib7KnT4A1PQFAQB1uyMi6g&usqp=CAU");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 100vw;
 }
 .formcontainer {
   display: flex;
