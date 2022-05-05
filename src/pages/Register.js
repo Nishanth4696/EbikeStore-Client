@@ -181,7 +181,7 @@ const formvalidationSchema = Yup.object({
     .email("Please enter the valid email")
     .required("please enter yor email"),
   password: Yup.string()
-    .min(8, "Too short password")
+    .min(5, "Too short password")
     .required("please fill the password"),
   phoneno: Yup.string()
     .matches(phoneRegExp, "Phone number is not valid")

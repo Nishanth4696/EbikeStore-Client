@@ -8,6 +8,7 @@ import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import VpnKeyIcon from '@mui/icons-material/VpnKey';
 
 function Login() {
   const history = useHistory();
@@ -57,7 +58,8 @@ function Login() {
                 fontSize: { sm: "35px", xs: "28px" },
               }}
             >
-              Log In
+              Log In &nbsp;
+           <a href="https://github.com/Nishanth4696/EbikeStore-Client/blob/master/README.md" target="_blank"> <IconButton ><VpnKeyIcon /></IconButton></a>
             </Typography>
           </div>
           <div style={{ display: "flex", flexDirection: "column" }}>
